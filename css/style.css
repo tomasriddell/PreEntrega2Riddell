@@ -1,0 +1,202 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+
+/* GENERALES */
+/* quitar estilo a los links */
+a{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: blue;
+}
+
+/* quitar viñeta a los ítems de lista */
+li{
+    list-style-type: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* flex sobre la lista */
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* ediciones al nav */
+nav{
+    margin-bottom: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 350px;
+    background-color: white;
+}
+
+
+
+/* ajustar tamaño del logo del nav */
+.logotipo{
+    width: 20%; 
+    height: 20%;
+}
+
+
+html, body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 5%;
+}
+
+footer{
+    background-color: rgba(0, 255, 255, 0.489);
+    margin-top: 40px;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* Títulos h1 de páginas */
+.titleLeft{
+    margin-left: 150px;
+}
+
+
+
+
+
+/* INDEX / HOME */
+/* nombrando áreas para el grid del home*/
+.intro{
+    width: 2fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: 'Poppins', sans-serif;
+    grid-area: intro;
+}
+
+.featuresList{
+    width: 2fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    grid-area: features;
+}
+
+/* grid sobre el home */
+.home{
+    display: grid;
+    grid-template-areas: 
+    "intro features"
+    "intro features";
+    margin: 0 10% 0 10%;
+    gap: 7%;
+}
+/*  antiguo Home con flexbox
+.home{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-evenly;
+}
+*/
+
+/* estilos de los features del home */
+.featureTitle{
+    margin: 0px;
+    font-size: 15px;
+}
+
+.featureParr{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 13px;
+}
+
+
+
+
+/* FAQS */
+.faqs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.preguntas{
+    width: 40%;
+    height: 1 fr;
+    margin: 20px;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+
+
+
+
+/* QUÉ HACEMOS, FEATURES */
+.features{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    margin: 0px 100px 0px 100px;
+}
+
+.featureBox{
+    padding: 20px;
+    margin: 25px;
+    background-color: rgba(0, 255, 255, 0.537);
+    border-radius: 10px;
+}
+
+
+
+
+/* SIGN UP */
+
+.signup{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.formulario{
+    background-color: rgba(0, 255, 255, 0.422);
+}
+
+.iphone{
+    height: 70%;
+    width: 20%;
+}
+
+
+
+
+
+/* PRECIOS */
+
+.precios{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 25px;
+}
+
+.preciosBox{
+    background-color: rgba(0, 255, 255, 0.469);
+    padding: 20px;
+    margin: 25px;
+    border-radius: 10px;
+
+}
+
