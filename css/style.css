@@ -177,6 +177,19 @@ footer{
 }
 
 
+.accordion-button{
+    color: black;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: rgba(0, 255, 255, 0.537);
+    color: black;
+}
+
+.accordion-button:focus {
+    border-color: rgba(0, 255, 255, 0.537);
+}
+
 /*  Antiguo formato de preguntas
 .preguntas{
     width: 40%;
