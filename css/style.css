@@ -80,7 +80,7 @@ footer{
 }
 */
 
-.tituloPrncipal{
+.tituloPrincipal{
     font-size: 4em;
 }
 
@@ -168,8 +168,16 @@ footer{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-top: 5%;
 }
 
+.faqMargin{
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
+
+/*  Antiguo formato de preguntas
 .preguntas{
     width: 40%;
     height: 1 fr;
@@ -177,7 +185,7 @@ footer{
     border: 3px solid black;
     border-radius: 5px;
 }
-
+*/
 
 
 
