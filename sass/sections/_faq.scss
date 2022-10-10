@@ -1,0 +1,47 @@
+
+
+/* FAQS */
+
+.faqMargin{
+    padding-left: 6%;
+    padding-right: 6%;
+
+    .faqs{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 5%;
+        
+        h1{
+            font-size: $fsize;
+        }
+
+    }
+
+}
+
+
+//Ediciones a Bootstrap
+.accordion-item{
+    h2{
+        button{
+            font-size: $fsize/5;
+        }
+    }
+}
+
+.accordion-button{
+    color: black;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: $color1;
+    color: white;
+}
+
+.accordion-button:focus {
+    border-color: $color1;
+}
+
+

@@ -1,0 +1,20 @@
+
+
+@mixin flex-col-start{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+// Tamaño de título (font size máximo)
+$fsize: 3em;
+
+//texto secundario gris
+$text-sec-color: rgb(36, 36, 36);
+
+//color principal
+$color1: darkcyan;
+
+
+
+

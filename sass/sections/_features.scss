@@ -1,0 +1,15 @@
+/* QUÉ HACEMOS, FEATURES */
+.features{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    margin: 0px 100px 0px 100px;
+}
+
+.featureBox{
+    padding: 20px;
+    margin: 25px;
+    background-color: rgba(0, 255, 255, 0.537);
+    border-radius: 10px;
+}
