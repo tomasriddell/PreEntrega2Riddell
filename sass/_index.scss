@@ -15,7 +15,7 @@
 
     .intro{
         width: 2fr;
-        @include flex-col-start;
+        @include flex-col-around;
         grid-area: intro;
 
         h1{
@@ -58,13 +58,14 @@
             background-color: $color1;
             color: white;
             width: fit-content;
+            border: none;
         }
     }
     
 
     .featuresList{
         width: 2fr;
-        @include flex-col-start;
+        @include flex-col-around;
         grid-area: features;
 
             /* estilos de los features del home */
@@ -84,13 +85,14 @@
 }
 
 
-/* MEDIA QUERIES */
+// MEDIA QUERIE MOBILE hacia abajo
 @media (max-width: 576px){
 
     .navbar>.container{
         flex-wrap:nowrap;
     }
 
+    //editando la grilla
     .home{
     
         margin: 6rem 5% 0 5%;
@@ -100,7 +102,7 @@
         "features";
         gap: 7%;
 
-
+        //editando la intro principal
         .intro{
             
             h1{
@@ -117,6 +119,7 @@
             }
         }
 
+        //editando los 3 features
         .featuresList{
             text-align: center;
             margin-bottom: 3rem;
@@ -128,9 +131,25 @@
             .featureParr{
                 margin-top: 2%;
                 font-size: $fsize/4;
+                padding: 0 3rem 0 3rem;
+                text-align: justify;
             }
         }
     }
 
 }
 
+
+//MEDIA QUERIE tablet - medium
+@media (min-width:576px) and (max-width:1024px){
+    .navbar>.container{
+        flex-wrap:nowrap;
+    }
+
+    //editando la grilla
+    .home{
+    
+        margin: 3rem 5% 0 5%;
+    }
+    
+}

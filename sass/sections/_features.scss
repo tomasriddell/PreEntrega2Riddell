@@ -1,4 +1,17 @@
 /* QUÉ HACEMOS, FEATURES */
+
+
+
+main{
+    @include flex-col-around;
+
+    h1{
+        margin-bottom: 2rem;
+        font-size: $fsize;
+    }
+}
+
+
 .features{
     display: flex;
     flex-direction: row;
@@ -8,8 +21,32 @@
 }
 
 .featureBox{
-    padding: 20px;
-    margin: 25px;
-    background-color: rgba(0, 255, 255, 0.537);
     border-radius: 10px;
+
+    img{
+        display: none;;
+    }
+
+    .card-body{
+        .btn{
+            background-color: $color1;
+            color: white;
+            width: fit-content;
+            border: none;
+            margin-top: 1rem;
+        }
+    }    
+
+    &:hover{
+        transform:scale(1.1); 
+        transition-property: all;
+        transition-duration:0.2s;
+        border: 2px solid $color1;
+        img{
+            display:initial;
+        }
+    }   
+
+    
 }
+

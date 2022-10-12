@@ -1,10 +1,18 @@
 
 
-@mixin flex-col-start{
+@mixin flex-col-around{
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+
+}
+
+@mixin flex-row-start{
+    display: flex;
+    flex-direction: row;
     justify-content: flex-start;
 }
+
 
 // Tamaño de título (font size máximo)
 $fsize: 3em;
