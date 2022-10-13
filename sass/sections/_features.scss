@@ -2,51 +2,59 @@
 
 
 
-main{
-    @include flex-col-around;
-
+.features{
     h1{
-        margin-bottom: 2rem;
         font-size: $fsize;
     }
-}
 
-
-.features{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: center;
-    margin: 0px 100px 0px 100px;
-}
-
-.featureBox{
-    border-radius: 10px;
-
-    img{
-        display: none;;
+    .mb-5{
+        font-size: $fsize/2;
     }
 
-    .card-body{
-        .btn{
-            background-color: $color1;
-            color: white;
-            width: fit-content;
-            border: none;
-            margin-top: 1rem;
-        }
-    }    
 
-    &:hover{
-        transform:scale(1.1); 
-        transition-property: all;
-        transition-duration:0.2s;
-        border: 2px solid $color1;
-        img{
-            display:initial;
-        }
-    }   
-
+    .featureBox{
+        border-radius: 10px;
     
+        img{
+            display: none;;
+        }
+    
+        .card-body{
+            .btn{
+                background-color: $color1;
+                color: white;
+                width: fit-content;
+                border: none;
+                margin-top: 1rem;
+            }
+        }    
+    
+        &:hover{
+            transform:scale(1.1); 
+            transition-property: all;
+            transition-duration:0.2s;
+            border: 2px solid $color1;
+            img{
+                display:initial;
+            }
+        }   
+    
+        
+    }
+
 }
 
+
+@media (max-width: 720px){
+    .features{
+        margin-top: 3rem;
+    
+        h1{
+            font-size: $fsize/2;
+        }
+
+        .mb-5{
+            font-size: $fsize/3;
+        }
+    }
+}

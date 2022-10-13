@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css">
-    <title>Medpro</title>
+    <title>Medicool</title>
 </head>
 <body>
     <header>
@@ -44,22 +44,99 @@
           </nav>
     </header>
     <main>
-        <h1 class="titleLeft">Subscríbete</h1>
-        <section class="signup">
-            <img class="iphone" src="../img/iphone.png" alt="pantalla de iphone">
-            <form class="formulario">
-                <fieldset>
-                    <legend>Completa tus datos</legend>
-                    <label for="">Nombre</label>
-                    <input type="text">
-                    <label for="">Email</label>
-                    <input type="email">
-                    <label for="">Celular</label>
-                    <input type="number">
-                    <label for="">Contraseña</label>
-                    <input type="password">
-                </fieldset>
-            </form>
+      
+        <section class="signup container">
+
+          <!--Section heading-->
+          <h1 class="h1-responsive font-weight-bold text-center my-4">Regístrate con nosotros!</h1>
+          <!--Section description-->
+          <p class="text-center w-responsive mx-auto mb-5">Completa tus datos y en un par de clicks tendrás acceso a nuestros servicios</p>
+
+          <div class="row">
+
+              
+              <div class="col mb-md-0 mb-5 gy-3">
+                  <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                      
+                      <div class="row mb-4">
+
+                          
+                          <div class="col-md-6">
+                              <div class="md-form mb-0">
+                                  <input type="text" id="name" name="name" class="form-control">
+                                  <label for="name" class="">Nombre</label>
+                              </div>
+                          </div>
+                         
+                          <div class="col-md-6">
+                              <div class="md-form mb-0">
+                                  <input type="text" id="email" name="email" class="form-control">
+                                  <label for="email" class="">E-mail</label>
+                              </div>
+                          </div>
+                      
+                      </div>
+
+                      <!-- password -->
+                      <div class="row mb-4">
+                        <div class="form-outline flex-fill mb-0">
+                          <input type="password" id="form3Example4c" class="form-control" />
+                          <label class="form-label" for="form3Example4c">Contraseña</label>
+                        </div>
+                      </div>
+
+                      <!-- repetir password -->
+                      <div class="row mb-4">
+                        <div class="form-outline flex-fill mb-0">
+                          <input type="password" id="form3Example4c" class="form-control" />
+                          <label class="form-label" for="form3Example4c">Repite tu contraseña</label>
+                        </div>
+                      </div>
+                     
+
+                      
+                      <div class="row mb-4">
+
+                        <!-- Género -->
+                        <div class="dropdown col-md-6 mb-4">
+                            <button class="btn boton-formulario dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                              Género
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                              <li>Masculino</li>
+                              <li>Femenino</li>
+                              <li>Otro</li>
+                            </ul>
+                        </div>
+
+                        <!-- Plan -->
+                        <div class="dropdown col-md-6 mb-4">
+                            <button class="btn boton-formulario dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                              Plan
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                              <li>Gratis</li>
+                              <li>Pro</li>
+                              <li>Gold</li>
+                            </ul>
+                        </div>
+
+
+                      </div>
+                      
+                      
+                      
+
+                  </form>
+
+                  <div class="text-center text-md-left">
+                      <a class="btn btn-primary register mt-5" onclick="document.getElementById('contact-form').submit();">Registrar</a>
+                  </div>
+                  <div class="status"></div>
+              </div>
+
+          </div>
         </section>
     </main>
 

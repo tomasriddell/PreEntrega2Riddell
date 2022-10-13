@@ -1,17 +1,36 @@
 /* SIGN UP */
 
+
+
 .signup{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    width: 70%;
 
+    h1{
+        font-size: $fsize;
+    }
+
+    .register{
+        background-color: $color1;
+        color: white;
+        font-size: $fsize/3;
+        border: none;
+        width: 25%;
+    }
+
+    .boton-formulario{
+        border: solid 2px $color1;
+        color: $color1;
+        width: auto;
+    }
 }
 
-.formulario{
-    background-color: rgba(0, 255, 255, 0.422);
-}
 
-.iphone{
-    height: 70%;
-    width: 20%;
+@media (max-width: 690px){
+    .signup{
+        margin-top: 3rem;
+        
+        h1{
+            font-size: $fsize/2;
+        }
+    }
 }
