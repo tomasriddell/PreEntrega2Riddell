@@ -10,11 +10,22 @@
         font-size: $fsize/2;
     }
 
-    .precios-box{
+    .precios-boxx{
         background-color: $color1;
         color: white;
-    
+        border: 0;
     }
+
+    .precios-box{
+        @extend .precios-boxx;
+        &:hover{
+            background-color: yellowgreen;
+            color: white;
+            border: 2px solid white;
+        }
+    }
+    
+    
 
     .precios-text{
         font-size: $fsize/2;

@@ -13,6 +13,13 @@
     justify-content: flex-start;
 }
 
+@mixin flex-row-center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 
 // Tamaño de título (font size máximo)
 $fsize: 3em;
