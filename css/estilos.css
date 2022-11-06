@@ -82,6 +82,12 @@ footer {
     height: 25%;
   }
 }
+/* MEDIA QUERIES */
+@media (min-width: 1024px) {
+  footer {
+    font-size: medium;
+  }
+}
 /* INDEX / HOME */
 /* nombrando áreas para el grid del home*/
 .navbar > .container {
