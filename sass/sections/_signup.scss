@@ -4,8 +4,15 @@
 .signup{
     width: 70%;
 
+    margin-top: 20%;
+        
+
     h1{
-        font-size: $fsize;
+        font-size: $fsize/2;
+    }
+
+    h2{
+        font-size: $fsize/3;
     }
 
     .register{
@@ -13,7 +20,7 @@
         color: white;
         font-size: $fsize/3;
         border: none;
-        width: 25%;
+        width: fit-content;
     }
 
     .boton-formulario{
@@ -26,12 +33,26 @@
 
 
 
-@media (max-width: 690px){
+
+
+@media (min-width: 690px){
     .signup{
-        margin-top: 3rem;
-        
+
+        margin-top: 10%;
+
         h1{
+            font-size: $fsize;
+        }
+
+        h2{
             font-size: $fsize/2;
         }
+    }
+}
+
+@media (min-width: 920px){
+    .signup{
+
+        margin-top: 5%;
     }
 }

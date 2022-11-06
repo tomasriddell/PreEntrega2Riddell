@@ -2,12 +2,19 @@
 /* PRECIOS */
 
 .precios{
+
+    margin-top: 4rem;
+
     h1{
-       font-size: $fsize;
+       font-size: $fsize/2;
+    }
+
+    h2{
+        font-size: $fsize/3;
     }
 
     p{
-        font-size: $fsize/2;
+        font-size: $fsize/3;
     }
 
     .precios-boxx{
@@ -33,9 +40,16 @@
 }
 
 
-@media (max-width:980px){
-
+@media (min-width: 768px){
     .precios{
-        margin-top: 3rem;
-    }
+        h1{
+           font-size: $fsize;
+        }
+    
+        h2{
+            font-size: $fsize/2;
+        }
 }
+}
+
+

@@ -21,6 +21,23 @@ html, body{
 nav{
     background-color: white;
 
+    /* ajustar tamaño del logo del nav */
+    .logotipo{
+        width: 3.3m; 
+        height: 3.2em;
+    }
+
+    // borrar el nombre Medicool en pantallas pequeñas
+    a span{
+        display: none;
+    }
+
+    .navbar-toggler {
+        padding: 0;
+        border:medium;
+        opacity: 0.5;
+    }
+
     /* flex sobre la lista */
     ul{
         display: flex;
@@ -46,11 +63,8 @@ nav{
     }
 }
 
-/* ajustar tamaño del logo del nav */
-.logotipo{
-    width: 20%; 
-    height: 20%;
-}
+
+
 
 
 // FOOTER
@@ -59,18 +73,31 @@ footer{
     color: white;
     margin-top: 4%;
     padding: 2.5%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    @include flex-col-around;
     align-items: center;
+    font-size: $fsize/5;
 }
 
 
 /* MEDIA QUERIES */
-@media (max-width: 576px){
+@media (min-width: 380px){
+
+
     footer{
-        @include flex-col-around;
-        font-size: $fsize/5;
+        @include flex-row-even;
     }
 
+    nav{
+        a span{
+        display: initial;
+        }
+
+         /* ajustar tamaño del logo del nav */
+        .logotipo{
+            width: 25%; 
+            height: 25%;
+         }
+
+    }
 }
+
